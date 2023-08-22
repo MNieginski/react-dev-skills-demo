@@ -1,8 +1,8 @@
 function NewSkillForm( {form} ){
-    return (<form>
-        <label>Skill<input></input></label>
+    return (<form className="border">
+        <label>Skill<input className="border"></input></label>
         <label>Level
-            <select>
+            <select className="border">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -10,7 +10,7 @@ function NewSkillForm( {form} ){
                 <option>5</option>
             </select>
         </label>
-        <button>ADD SKILL</button>
+        <button className="button">ADD SKILL</button>
     </form>
     )
 }

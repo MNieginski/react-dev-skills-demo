@@ -3,22 +3,29 @@ import './App.css';
 import SkillList from './SkillList';
 import NewSkillForm from './NewSkillForm';
 
+const skills = [
+  { name: "HTML", level: 5 },
+  { name: "CSS", level: 3 },
+  { name: "JavaScript", level: 3 },
+  { name: "Python", level: 1 }
+];
+
 function App() {
 
-  const listArray = ["thingOne", "thingTwo", "thingThree"]
-
+  
   return (
     <div className="App">
-      <header>
+      <header className="App-Header">
         <h1>React Dev Skills</h1>
+      
+        <SkillList skills={skills}/>
 
-        <SkillList skills/>
+      </header>
         
         <hr></hr>
 
         <NewSkillForm form/>
 
-      </header>
     </div>
   );
 }

@@ -2,16 +2,14 @@ import SkillListItem from "./SkillListItem"
 
 function SkillList({skills}){
 
-    //const skillListItems = skills.map(function(skillsStr){return(<SkillListItem skill ={skillsStr}/>)})
+    const skillListItems = skills.map(function(skillStr){return(<SkillListItem skill ={skillStr}/>)})
 
     return(
-        <div>
-            {/* <h3>{listName}</h3> */}
+        <div className="container">
+           
 
             <ul>
-                <SkillListItem />
-                <SkillListItem />
-                <SkillListItem />
+                { skillListItems }
             </ul>
 
         </div>
