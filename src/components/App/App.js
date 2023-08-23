@@ -3,14 +3,24 @@ import './App.css';
 import SkillList from './SkillList';
 import NewSkillForm from './NewSkillForm';
 
-const skills = [
-  { name: "HTML", level: 5 },
-  { name: "CSS", level: 3 },
-  { name: "JavaScript", level: 3 },
-  { name: "Python", level: 1 }
-];
+import { useState } from 'react';
+
+// const skills = [
+//   { name: "HTML", level: 5 },
+//   { name: "CSS", level: 3 },
+//   { name: "JavaScript", level: 3 },
+//   { name: "Python", level: 1 }
+// ];
+
 
 function App() {
+
+  const [skills, setSkills] = useState ([
+    { name: "HTML", level: 5 },
+    { name: "CSS", level: 3 },
+    { name: "JavaScript", level: 3 },
+    { name: "Python", level: 1 }
+  ]);
 
   
   return (
