@@ -22,6 +22,11 @@ function App() {
     { name: "Python", level: 1 }
   ]);
 
+  function addSkill(skillStr) {
+    const newSkill = [{name: skillStr, level: 3}]
+    setSkills([...skills, newSkill])
+  }
+
   
   return (
     <div className="App">
@@ -34,7 +39,7 @@ function App() {
         
         <hr></hr>
 
-        <NewSkillForm form/>
+        <NewSkillForm addSkill={addSkill} />
 
     </div>
   );
